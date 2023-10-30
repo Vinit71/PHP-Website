@@ -11,15 +11,8 @@ body {
     text-align: center;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-}
-
-.menu-toggle {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    margin-right: 20px;
 }
 
 .bar {
@@ -98,7 +91,7 @@ Previous CSS styles remain unchanged */
 
 /* Enhancements for the navigation bar */
 .nav {
-    background-color: #333;
+    background-color: #19ca42;
     padding: 10px 0;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
@@ -107,7 +100,7 @@ Previous CSS styles remain unchanged */
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .nav li {
@@ -122,7 +115,7 @@ Previous CSS styles remain unchanged */
 }
 
 .nav a:hover {
-    color: #4CAF50;
+    color: #022002;
 }
 
 @media screen and (max-width: 768px) {
