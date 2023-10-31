@@ -24,11 +24,21 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding: 3px;
+    text-align: justify;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 .program {
@@ -49,47 +59,6 @@ img {
     border-radius: 5px;
 }
 
-/* .nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.nav li {
-    margin: 0 15px;
-}
-
-@media screen and (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-
-    .nav {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-        position: fixed;
-        top: 60px;
-        left: 0;
-        background-color: #4CAF50;
-        z-index: 1;
-    }
-
-    .nav.show {
-        display: flex;
-    }
-}
-
-Previous CSS styles remain unchanged */
-
-/* Enhancements for the navigation bar */
 .nav {
     background-color: #19ca42;
     padding: 10px 0;
@@ -116,6 +85,26 @@ Previous CSS styles remain unchanged */
 
 .nav a:hover {
     color: #022002;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #007bff;
 }
 
 @media screen and (max-width: 768px) {
