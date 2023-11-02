@@ -60,9 +60,12 @@ img {
 }
 
 .nav {
-    background-color: #19ca42;
+    background-color: #7A86B8;
     padding: 10px 0;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
 .nav ul {
@@ -74,6 +77,7 @@ img {
 
 .nav li {
     margin: 0 20px;
+    font-size: 16px;
 }
 
 .nav a {
@@ -108,8 +112,6 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-    /* Previous media query styles remain unchanged */
-
     .nav {
         display: none;
         width: 100%;
