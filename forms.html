@@ -8,64 +8,99 @@
 </head>
 <body>
 
+    <div class="header">Hello</div>
     <!-- ================Nav Bar==================== -->
-        <nav class="nav">
-            <ul>
-                <li><a href="index.html">Introduction</a></li>
-                <li><a href="php_basics.html">PHP Basics</a></li>
-                <li><a href="control_structure.html">Control structure</a></li>
-                <li><a href="functions.html">Function</a></li>
-                <li><a href="arrays.html">Arrays</a></li>
-                <li><a href="String_handling.html">String Handling</a></li>
-                <li><a href="forms.html">Forms</a></li>
-                <li><a href="connecting_database.html">Connecting Database</a></li>
-                <li><a href="maintaining_user_state.html">Maintainig User State</a></li>
-                <li><a href="file_handling.html">File Handling</a></li>
-            </ul>
-        </nav>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="php_basics.html">PHP Basics</a></li>
+            <li><a href="control_structure.html">Control structure</a></li>
+            <li><a href="functions.html">Function</a></li>
+            <li><a href="arrays.html">Arrays</a></li>
+            <li><a href="String_handling.html">String Handling</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="connecting_database.html">Connecting Database</a></li>
+            <li><a href="maintaining_user_state.html">Maintainig User State</a></li>
+            <li><a href="file_handling.html">File Handling</a></li>
+        </ul>
+    </div>
 
     <!-- ==============Main============== -->
 
     <div class="container">
         <h1>Forms: </h1>
-        <p></p>
+        <p> A PHP form is an HTML element that gathers user input (such as text or selections) on a web page. 
+            When a user submits the form, the data is sent to a PHP script on the server for processing. 
+            Forms are crucial for interactive websites, allowing users to interact by inputting data. 
+            PHP scripts handle the submitted data, perform validations, and generate responses for users. 
+            In essence, PHP forms enable the exchange of data between users and web servers, powering dynamic web applications.</p>
 
        <h1>PHP Programs and Outputs</h1>
        <div class="program">
-           <h2>Program 1: Post Method</h2>
-           <p>defination</p>
-           <img src="prog_output_img/strings.png" alt="">
-           <h2>Output:</h2>
-           <img src="prog_output_img/strings_out.png" alt="output">
+           <h2>Post Method</h2>
+           <p>When you use the "POST" method in a form, the data entered by the user is sent in the HTTP request body. 
+            This method is suitable for sending sensitive information or large amounts of data because the data is not visible in the URL.</p>
+            <h3>HTML</h3>
+           <img src="prog_output_img/post_method_html.png" alt="">
+           <h3>PHP</h3>
+           <img src="prog_output_img/post_method_php.png" alt="output">
        </div>
        <div class="program">
-           <h2>Program 2: Get Method</h2>
-           <p>defination</p>
-           <img src="prog_output_img/string_interpolation.png" alt="">
-           <h2>Output:</h2>
-           <img src="prog_output_img/string_inter_out.png" alt="output">
+           <h2>Get Method</h2>
+           <p>When you use the "GET" method in a form, the form data is appended to the URL in the form of query parameters.
+             This makes the data visible in the URL, which can be seen in the browser's address bar.</p>
+             <h3>HTML</h3>
+           <img src="prog_output_img/get_method_html.png" alt="">
+           <h3>PHP</h3>
+           <img src="prog_output_img/get_method_php.png" alt="output">
        </div>
-       <div class="program">
-           <h2>Program 3: Super Global Variable</h2>
-           <p>defination</p>
-           <img src="prog_output_img/str_indexes.png" alt="">
-           <h2>Output:</h2>
-           <img src="prog_output_img/str_indexes_out.png" alt="output">
-       </div>
-   </div>
 
-<footer class="footer">
-   <div class="footer-content">
+       <div class="program">
+           <h2>Super Global Variable</h2>
+           <p>In PHP, superglobals are special global variables that are available in all scopes throughout a script. 
+            They are predefined variables that contain useful information and are used to gather form data, manipulate sessions,
+            handle cookies, and perform other essential tasks in web development. Superglobals are prefixed with a dollar sign ($)
+            and an underscore (_). </p>
+            <h3>Example of some Super Global Variables: </h3>
+            
+            <ul>
+                <br><li><b>$_GET:</b>
+
+                    Used to collect form data after submitting an HTML form with the HTTP GET method.
+                    Gathers data from the form's query parameters appended to the URL.</li><br>
+                <li><b>$_POST:</b>
+                    
+                    Used to collect form data after submitting an HTML form with the HTTP POST method.
+                    Gathers data from the form fields sent in the request body.</li><br>
+                <li><b>$_REQUEST:</b>
+                    
+                    Can be used to collect form data regardless of the HTTP method used (GET or POST).
+                    Gathers data from both the $_GET, $_POST, and $_COOKIE superglobals.</li>
+            </ul>
+
+            <br><h3>$_POST</h3>
+            <img src="prog_output_img/super_global_var_POST.png" alt="output">
+
+           <br> <h3>$_GET</h3>
+           <img src="prog_output_img/super_global_var_GET.png" alt="">
+        
+           <br><h3>$_REQUEST</h3>
+           <img src="prog_output_img/super_global_var_REQUEST.png" alt="output">
+        </div>
+
+        <!-- =====footer====== -->
+    <footer class="footer">
+    <div class="footer-content">
        <p>Institution Name. All rights reserved.</p>
        <p>Contact: email | Phone: </p>
    </div>
-   <div class="footer-links">
-       <a href="#">Home</a> |
+    <div class="footer-links">
+       <a href="index.html">Home</a> |
        <a href="#">Courses</a> |
        <a href="#">About Us</a> |
        <a href="#">Contact</a>
    </div>
-</footer>
+    </footer>
 
 <script src="script.js"></script>
 </body>
