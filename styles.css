@@ -115,6 +115,10 @@ body {
     color: #FFD700;
 } */
 
+.mark a{
+    color: white !important;
+}
+
 .content {
     margin-left: 260px;
     padding: 20px;
