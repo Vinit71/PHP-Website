@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Programs and Outputs</title>
+    <title>PHP-Code-Hub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="header">Hello</div>
+    <div class="header">PHP Code Hub</div>
     <!-- ================Nav Bar==================== -->
         <div class="sidebar">
             <ul>
@@ -20,7 +20,7 @@
                 <li><a href="String_handling.html">String Handling</a></li>
                 <li><a href="forms.html">Forms</a></li>
                 <li><a href="connecting_database.html">Connecting Database</a></li>
-                <li><a href="maintaining_user_state.html">Maintainig User State</a></li>
+                <li class="mark"><a href="maintaining_user_state.html">Cookies</a></li>
                 <li><a href="file_handling.html">File Handling</a></li>
             </ul>
         </div>
@@ -32,58 +32,47 @@
             retrieve, and delete cookies. Cookies help personalize user experiences and enable websites to remember user actions, 
             enhancing usability.</p>
 
-       <h1>Programs and Outputs</h1>
        <div class="program">
-           <h2>Create a Cookie</h2>
-           <!-- <p>defination</p> -->
-           <img src="prog_output_img/strings.png" alt="">
-           <h2>Output:</h2>
-           <img src="prog_output_img/strings_out.png" alt="output">
+           <h2>Setting Cookies</h2>
+           <p>
+            To set a cookie in PHP, you use the setcookie() function. The setcookie() function takes up to seven arguments, 
+            but the only required argument is the name of the cookie. The other arguments are optional and allow you to control the 
+            expiration date, path, domain, security, and HTTPOnly status of the cookie.</p>
+           <img src="prog_output_img/setting_cookies.png" alt="">
        </div>
+
        <div class="program">
-           <h2>Program 2: String Interpolation</h2>
-           <!-- <p>defination</p> -->
-           <img src="prog_output_img/string_interpolation.png" alt="">
-           <h2>Output:</h2>
-           <img src="prog_output_img/string_inter_out.png" alt="output">
+           <h2>Retrieving Cookies</h2>
+           <p>To retrieve cookies in PHP, you can use the $_COOKIE super global variable.</p>
+           <img src="prog_output_img/Retriving_cookies.png" alt="">
        </div>
+
        <div class="program">
-           <h2>Program 3: Character and String Indexes</h2>
-           <!-- <p>defination</p> -->
-           <img src="prog_output_img/str_indexes.png" alt="">
-           <h2>Output:</h2>
-           <img src="prog_output_img/str_indexes_out.png" alt="output">
+           <h2>Managing Cookie</h2>
+           <p>Cookies can be modified or deleted using the setcookie() function with updated values or by setting an expiration time in the past.</p>
+           <img src="prog_output_img/manage_cookie.png" alt="">
        </div>
+
        <div class="program">
-           <h2>Program 4: String Operators</h2>
-           <!-- <p>defination</p> -->
-           <img src="prog_output_img/str_operator.png" alt="">
-           <h2>Output:</h2>
-           <img src="prog_output_img/sting_operator_out.png" alt="output">
+           <h2>User Authentication</h2>
+           <p>Cookies are often used for user authentication. Here's a simplified example of using cookies for user login/logout:</p>
+           <img src="prog_output_img/user_authantication.png" alt="">
        </div>
        
-       <div class="program">
-           <h2>Program 5: PHP String functions</h2>
-           <!-- <p>defination</p> -->
-           <img src="prog_output_img/str_functions.png" alt="">
-           <h2>Output:</h2>
-           <img src="prog_output_img/str_func_out.png" alt="output">
-       </div>
    </div>
 
-<footer class="footer">
-   <div class="footer-content">
-       <p>Institution Name. All rights reserved.</p>
-       <p>Contact: email | Phone: </p>
-   </div>
-   <div class="footer-links">
-       <a href="index.html">Home</a> |
-       <a href="#">Courses</a> |
-       <a href="#">About Us</a> |
-       <a href="#">Contact</a>
-   </div>
+   <footer class="footer">
+    <div class="footer-content">
+        <p>Contact: vinitkumarg22@gmail.com</p>
+        <p>Developed by Vinit</p>
+    </div>
+    <div class="footer-links">
+        <a href="index.html">Home</a> |
+        <a href="#">Courses</a> |
+        <a href="#">About Us</a> |
+        <a href="#">Contact</a>
+    </div>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

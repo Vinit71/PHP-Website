@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Programs and Outputs</title>
+    <title>PHP-Code-Hub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="header">Hello</div>
+    <div class="header">PHP Code Hub</div>
     <!-- ================Nav Bar==================== -->
     <div class="sidebar">
         <ul>
@@ -21,65 +21,87 @@
             <li><a href="forms.html">Forms</a></li>
             <li><a href="connecting_database.html">Connecting Database</a></li>
             <li><a href="maintaining_user_state.html">Maintainig User State</a></li>
-            <li><a href="file_handling.html">File Handling</a></li>
+            <li class="mark"><a href="file_handling.html">File Handling</a></li>
         </ul>
     </div>
 
-    <!-- ==============Main============== -->
          <!-- ========Main=========== -->
          <div class="container">
-            <h1>PHP Programs and Outputs</h1>
+            <h1>File Handling</h1>
+            <p>
+                File handling in PHP is the process of reading, writing, appending, and deleting files. It can be done using a variety of functions.
+                There are a number of different ways to handle files in PHP. The most common method is to use the built-in functions fopen(), fread(), 
+                fwrite(), and fclose(). These functions allow you to open a file, read from it, write to it, and close it.
+            </p>
             <div class="program">
-                <h2>Program 1: Hello World</h2>
-                <p>defination</p>
-                <img src="images/program1_output.png" alt="Hello World Output">
-                <h2>Output:</h2>
-                <img src="images/program2_output.png" alt="Simple Calculation Output">
+                <h2>File Permissions</h2>
+                <p>File permissions in PHP are essential for controlling who can access and manipulate files. 
+                    Permissions include read, write, and execute permissions for the owner, group, and others.</p>
+                <img src="prog_output_img/file permission.png" alt="">
             </div>
+
             <div class="program">
-                <h2>Program 2: Simple Calculation</h2>
-                <p>defination</p>
-                <img src="images/program2_output.png" alt="Simple Calculation Output">
-                <h2>Output:</h2>
-                <img src="images/program2_output.png" alt="Simple Calculation Output">
-            </div>
-            <div class="program">
-                <h2>Program 3: Hello World</h2>
-                <p>defination</p>
-                <img src="images/program1_output.png" alt="Hello World Output">
-                <h2>Output:</h2>
-                <img src="images/program2_output.png" alt="Simple Calculation Output">
-            </div>
-            <div class="program">
-                <h2>Program 4: Simple Calculation</h2>
-                <p>defination</p>
-                <img src="images/program2_output.png" alt="Simple Calculation Output">
-                <h2>Output:</h2>
-                <img src="images/program2_output.png" alt="Simple Calculation Output">
+                <h2>File Operations</h2>
+                <p>PHP provides various functions for working with files, including opening, reading, writing, copying, renaming, deleting, and closing files.</p>
+                <ul>
+
+            <li>
+                <p><b>Opening and Reading a File :</b> To open and read a file in PHP, you can use the fopen() 
+                    function to open the file and fread() function to read its contents. Here's an example:</p>
+                <img src="prog_output_img/opening_file.png" alt="">
+            </li>
+
+            <li>
+                <p><b>Writing to a File : </b>To write data to a file in PHP, you can use the fopen() function with the "w" 
+                    mode to open the file for writing and the fwrite() function to write data. Here's an example:</p>
+                <img src="prog_output_img/working_directory.png" alt="">
+            </li>
+
+            <li>
+                <p><b>Renaming Files : </b>To rename a file in PHP, you can use the rename() function. It takes the current 
+                    file name and the new file name as arguments. Here's an example:</p>
+                <img src="prog_output_img/rename_file.png" alt="">
+            </li>
+
+            <li>
+                <p><b>Deleting a File : </b> To delete a file in PHP, you can use the unlink() function. It takes the file 
+                    path as an argument. Here's an example:</p>
+                <img src="prog_output_img/delete_file.png" alt="">
+            </li>
+
+            </ul>
             </div>
             
-            <div class="program">
-                <h2>Program 5: Hello World</h2>
-                <p>defination</p>
-                <img src="images/program1_output.png" alt="Hello World Output">
-                <h2>Output:</h2>
-                <img src="images/program2_output.png" alt="Simple Calculation Output">
-            </div>
-            <div class="program">
-                <h2>Program 6: Simple Calculation</h2>
-                <p>defination</p>
-                <img src="images/program2_output.png" alt="Simple Calculation Output">
-                <h2>Output:</h2>
-                <img src="images/program2_output.png" alt="Simple Calculation Output">
-            </div>
-            <div class="program">
-                <h2>Program 7: Hello World</h2>
-                <p>defination</p>
-                <img src="images/program1_output.png" alt="Hello World Output">
-                <h2>Output:</h2>
-                <img src="images/program2_output.png" alt="Simple Calculation Output">
-            </div>
+        <div class="program">
+            <h2>File System Functions: </h2>
+            <p>PHP offers a range of file system functions to interact with files and directories, 
+                including file_exists(), is_file(), is_dir(), and more.</p>
+            <img src="prog_output_img/function_file.png" alt="">
         </div>
-    <!-- Add more program sections as needed -->
+
+        <div class="program">
+            <h2>Working On Directories: </h2>
+            <p>PHP allows you to work with directories, create new directories, list directory contents, and navigate through the file system.</p>
+            <img src="prog_output_img/working_directory.png" alt="">
+        </div>
+    </div>
+
+    </div>
+</div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Contact: vinitkumarg22@gmail.com</p>
+            <p>Developed by Vinit</p>
+        </div>
+        <div class="footer-links">
+            <a href="index.html">Home</a> |
+            <a href="#">Courses</a> |
+            <a href="#">About Us</a> |
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+
 </body>
 </html>
