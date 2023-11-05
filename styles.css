@@ -8,7 +8,7 @@ body {
 /* ========header========= */
 .header {
     position: fixed;
-    background-color: #2B3499;
+    background-color: #0C356A;
     height: 50px;
     font-weight: bold;
     font-size: 32px;
@@ -59,7 +59,7 @@ p {
 }
 
 h1, h2 {
-    color: #322653;
+    color: #0C356A;
 }
 
 img {
@@ -93,24 +93,33 @@ body {
 .sidebar ul li {
     padding: 12px;
 }
+.sidebar ul li:hover {
+    transition: 0.3s;
+    background-color: #5C5470;
+    padding: 12px;
+}
 
 .sidebar ul li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    transition: 0.3s;
+    
 }
 
-.sidebar ul li a:hover {
-    color: #FFD700;
+
+.mark{
+    background-color: #0C356A;
 }
+
+/* .sidebar ul li a:hover {
+    color: #FFD700;
+} */
 
 .content {
     margin-left: 260px;
     padding: 20px;
 }
 
-/* Responsive layout - when the screen is less than 768px wide, make the sidebar and content stack on top of each other */
 @media screen and (max-width: 768px) {
     .sidebar {
         width: 100%;
@@ -121,7 +130,6 @@ body {
         margin-left: 0;
     }
 }
-
 
 .footer {
     background-color: #f8f9fa;
@@ -143,17 +151,3 @@ body {
 .footer-links a:hover {
     color: #007bff;
 }
-
-/* @media screen and (max-width: 768px) {
-    .nav {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
-        position: fixed;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-        z-index: 1;
-    }
-} */
