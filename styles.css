@@ -27,6 +27,23 @@ body {
     z-index: 5;
     grid-column: 1/-1;
     width: 100%;
+    border: 1px solid black;
+   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+    font-size: 2.5rem;
+    height: 50px;
+    /* width: 100%; */
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--dblue);
+    font-family: 'Black Ops One';
+
+    letter-spacing: 2px;
+    color: var(--white);
 }
 .sidebar
 {
@@ -44,24 +61,6 @@ body {
     grid-row:2/3;
 }
 
-/* ========header========= */
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* justify-content: space-between; */
-    font-size: 2.5rem;
-    height: 50px;
-    /* width: 100%; */
-    text-align: center;
-    padding: 10px 0;
-    background-color: var(--dblue);
-    font-family: 'Black Ops One';
-}
-.header{
-    letter-spacing: 2px;
-    color: var(--white);
-}
 /* #toggle-button{
     font-size: 2rem;
     color:var(--white);
@@ -69,6 +68,7 @@ body {
 
 
 .container {
+    
     background-color: var(--white);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
@@ -110,27 +110,6 @@ img {
     background-color: var(--black);
 }
 
-/* .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    padding: 12px;
-}
-.sidebar ul li:hover {
-    transition: 0.3s;
-    background-color: #5C5470;
-    padding: 12px;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color:var(--white);
-    font-weight: bold;
-    
-} */
-
 .sidebar ul{
     font-weight:bold;
 }
@@ -155,18 +134,9 @@ img {
     background-color: var(--dark);
 }
 
-/* .sidebar ul li a:hover {
-    color: #FFD700;
-} */
-
 .mark a{
     color: var(--white) !important;   
 }
-
-/* .content {
-    background: green !important;
-    padding: 20px;
-} */
 
 @media screen and (max-width: 768px) {
     .sidebar {
@@ -184,9 +154,10 @@ img {
 }
 
 
-@media screen and (max-width:1600px)
+@media screen and (max-width:1620px)
 {
     body{
+       
         grid-template-columns: 20% 80%;
         grid-template-rows: auto auto;
     }
@@ -198,7 +169,7 @@ img {
     }
 
     .container{
-        margin-left: -4%;
+        margin-left: -10%;
     }
 }
 @media screen and (max-width:1240px)
@@ -227,7 +198,7 @@ img {
         width: 30%;
     }
 }
-@media screen and (max-width:880px)
+@media screen and (max-width:525px)
 {
     body{
         grid-template-columns: 30% 70%;
@@ -238,7 +209,7 @@ img {
     } */
     .sidebar{
         width: 30%;
-        display: none;
+        /* display: none; */
     }
     .container{
         grid-column: 1/-1;
@@ -255,4 +226,18 @@ img {
     .container p {
         padding: 1rem;
     }
+}
+
+@media screen and (max-width: 2000px){
+    .container{
+    padding: 3vh 8vw;
+    }
+    
+}
+
+@media screen and (max-width: 2500px){
+    .container{
+    padding: 3vh 8vw;
+    }
+    
 }
