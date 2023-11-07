@@ -29,14 +29,11 @@ body {
     width: 100%;
     border: 1px solid black;
    
-
     display: flex;
     align-items: center;
     justify-content: center;
-    /* justify-content: space-between; */
     font-size: 2.5rem;
     height: 50px;
-    /* width: 100%; */
     text-align: center;
     padding: 10px 0;
     background-color: var(--dblue);
@@ -45,33 +42,19 @@ body {
     letter-spacing: 2px;
     color: var(--white);
 }
-.sidebar
-{
-    position: fixed;
-    margin-top:4rem;
-    width: 15%;
-    grid-column: 1/2;
-    grid-row:2/3;
-}
+
+
 .container
 {
     padding: 1rem 3rem;
     margin-top:4rem;
     grid-column: 2/3;
     grid-row:2/3;
-}
 
-/* #toggle-button{
-    font-size: 2rem;
-    color:var(--white);
-} */
-
-
-.container {
-    
     background-color: var(--white);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
+
 
 p {
     font-size: 16px;
@@ -104,8 +87,13 @@ img {
 
 /* ==========nav============= */
 .sidebar {
+    position: fixed;
+    margin-top:4rem;
+    width: 15%;
+    grid-column: 1/2;
+    grid-row:2/3;
+
     height: 100%;
-    /* width: 300px; */
     padding-top: 20px;
     background-color: var(--black);
 }
@@ -113,22 +101,24 @@ img {
 .sidebar ul{
     font-weight:bold;
 }
+
 .sidebar ul li {
     list-style: none;
     display: block;
     margin-left: -2.2rem;
 }
+
 .sidebar ul li a{
     display: block;
     padding: 1rem 1rem 1rem 2.5rem;
     text-decoration: none;
     color: black;
 }
+
 .sidebar ul li a:hover{
     color:var(--dblue) !important;
     background-color: #CBE4DE;
 }
-
 
 .mark{
     background-color: var(--dark);
@@ -138,15 +128,6 @@ img {
     color: var(--white) !important;   
 }
 
-@media screen and (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-    }
-    .content {
-        margin-left: 0;
-    }
-}
 
 .footer {
     display: none;
@@ -154,62 +135,21 @@ img {
 }
 
 
-@media screen and (max-width:1620px)
-{
-    body{
-       
-        grid-template-columns: 20% 80%;
-        grid-template-rows: auto auto;
-    }
-    /* .header{
-        background: green;
-    } */
-    .sidebar{
-        width: 17%;
-    }
+/* @media(max-width: 480px){
 
-    .container{
-        margin-left: -10%;
-    }
-}
-@media screen and (max-width:1240px)
-{
-    body{
-        grid-template-columns: 25% 75%;
-        grid-template-rows: auto auto;
-    }
-    /* .header{
-        background: yellow;
-    } */
-    .sidebar{
-        width: 25%;
-    }
-}
-@media screen and (max-width:920px)
-{
-    body{
-        grid-template-columns: 30% 70%;
-        grid-template-rows: auto auto;
-    }
-    /* .header{
-        background: red;
-    } */
-    .sidebar{
-        width: 30%;
-    }
-}
+
+} */
+
+
 @media screen and (max-width:525px)
 {
     body{
         grid-template-columns: 30% 70%;
         grid-template-rows: auto auto;
     }
-    /* .header{
-        background: purple;
-    } */
+
     .sidebar{
         width: 30%;
-        /* display: none; */
     }
     .container{
         grid-column: 1/-1;
@@ -228,16 +168,77 @@ img {
     }
 }
 
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width:920px)
+{
+    body{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: auto auto;
+    }
+ 
+    .sidebar{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width:1240px)
+{
+    body{
+        grid-template-columns: 25% 75%;
+        grid-template-rows: auto auto;
+    }
+
+    .sidebar{
+        width: 25%;
+    }
+}
+
+
+@media screen and (max-width:1620px)
+{
+    body{
+       
+        grid-template-columns: 20% 80%;
+        grid-template-rows: auto auto;
+    }
+
+    .sidebar{
+        width: 17%;
+    }
+
+    .container{
+        margin-left: -10%;
+    }
+
+    .sidebar ul.show {
+        display: block;
+    }
+}
+
+
 @media screen and (max-width: 2000px){
     .container{
-    padding: 3vh 8vw;
+    padding: 2vh 8vw;
     }
-    
 }
+
 
 @media screen and (max-width: 2500px){
     .container{
-    padding: 3vh 8vw;
+    padding: 2vh 8vw;
     }
-    
 }
+
+
